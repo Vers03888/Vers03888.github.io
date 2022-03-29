@@ -1,2 +1,2 @@
-# brownandrewcourse.github.io
+# Сергей Чуприлин
 Мой первый сайт
