@@ -5,6 +5,7 @@ nav{
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
 }
 .logo{
     color: #fff;
@@ -13,6 +14,13 @@ nav{
     line-height: 60px;
     padding-left: 388px;
     float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
+}
+main{
+    width: 100%;
+    height: 100%;
 }
 .menu{
     float: left;
@@ -26,10 +34,14 @@ nav{
     margin-left: 40px;
     font-size: 16px;
     text-transform: uppercase;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
 }
 .main {
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/%D0%9F%D0%B0%D1%80%D0%B5%D0%BD%D1%8C.png) 90% 100%/auto 85% no-repeat , url(../img/%D1%84%D0%BE%D0%BD.png) center/cover no-repeat;
 }
 .title__container{
@@ -37,6 +49,13 @@ nav{
     margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-duration: 2.4s;
+    -o-animation-duration: 2.4s;
+    animation-duration: 2.4s;
     
 }
 .title__container h1{
@@ -60,6 +79,87 @@ nav{
     padding: 0px 16px;
     margin: 50px 14px 0px 14px;
 }
+.menu li a{
+    transition: all 0.5s; 
+    color: white;
+    display: inline-block;
+    transform: scale(1)
+}
+.menu li a:visited{
+    color: white;
+}
+.menu li a:hover{
+    color: orange;
+    
+}
+.menu li a:active{
+    transform: scale(1.5)
+    }
+
+.main input{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.main input:hover{
+   background: #344051;
+    color: white;
+}
+.main input:active{
+   transform: scale(1.1);
+    
+}
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -480px
+    }
+    to{
+        opacity: 1;
+        margin-left: 404px;
+    }
+}
+
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+
+
+
+.resume {
+   width: 100%;  
+     }
+
 
 .resume h2{
     display: block;
@@ -67,18 +167,27 @@ nav{
     font-size: 25px;
     font-weight: bold;
     font-family: Arial, sans-serif;
+    padding-top: 50px;
+    
     }
 
-.resume {
-    background: url(../img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png) center 0.2% no-repeat, url(../img/%D1%84%D0%BE%D1%82%D0%BA%D0%B0.png) center no-repeat; 
-    background-position: 50% 3%, 50% 8%; 
-    }
-
+.img1{
+    margin-left: 830px;
+    margin-top: 40px;
+    display: inline-block;
+    transition: 0.8s ease;
+   }
+.img2{
+    margin-left: 890px;
+}
+.img1:hover{
+    transform: matrix(2, 0, 0, 2, 0, 0);
+}
 .prg {
     font-family: Arial, sans-serif;
     text-align: left;
     margin-left: 600px;
-    margin-top: 290px;
+    margin-top: 150px;
     line-height: 15px;
     width: 735px;
 }
@@ -103,15 +212,55 @@ nav{
     padding-right: 10px;
     background: url(../img/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.png) left/auto 60% no-repeat;
     background-position: 5px;
+    transition: 0.2s;
+    transform: scale(1);
+    animation: pulse infinite;
+    animation-duration: 2s;
     }
+.resume input:hover{
+    background: #344051;
+    color: white;
+}
+.resume input:active{
+   transform: scale(1.4);
+    color: yellow;
+    
+}
 
 
 .skills {
     width: 100%;
     height: 100%;
-    background: url(../img/%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BE%D1%84%D0%BE%D0%BD.png) 1470px 270px no-repeat , url(../img/%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.png) 1150px 270px no-repeat , url(../img/%D0%B7%D0%BD%D0%B0%D0%BA.png) 800px 270px no-repeat, url(../img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png) center 26% no-repeat, url(../img/%D0%BD%D0%BE%D1%83%D1%82.png) 500px 270px no-repeat , url(../img/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%20%D1%84%D0%BE%D0%BD%D0%B0.png) center/cover  no-repeat;
+    background: url(../img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png) center 26% no-repeat, url(../img/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%20%D1%84%D0%BE%D0%BD%D0%B0.png) center/cover  no-repeat;
     
 }
+.img3{
+    display: inline-block;
+    margin-left: 490px;
+    margin-top: 290px;
+     animation: bounce infinite;
+    animation-duration: 1.4s;
+}
+.img4{
+    display: inline-block;
+    margin-left: 235px;
+     animation: bounce infinite;
+    animation-duration: 1.8s;
+    }
+.img5{
+    display: inline-block;
+    margin-left: 285px;
+     animation: bounce infinite;
+    animation-duration: 2.2s;
+}
+.img6{
+    display: inline-block;
+    margin-left: 280px;
+    animation: bounce infinite;
+    animation-duration: 2.6s;
+    
+}
+
 .skills h2{
     display: block;
     text-align: center;
@@ -127,46 +276,50 @@ nav{
     color: #cf7600;
     margin-left: 200px;
     font-size: 20px;
-    margin-top: 50px;
+    margin-top: 35px;
    
 }
 .skills ul{
-    padding-left: 270px;
-    padding-top: 90px;
+    margin-left: 250px;
+    margin-top: 5px;
     
 }
 
 .skills_text1 p{
+    text-align: center;
     float: left;
     color: black;
     width: 215px;
     height: 65px;
-    margin-left: 420px;
+    margin-left: 410px;
     margin-top: 20px;
    
 }
 .skills_text2 p{
+    text-align: center;
     float: left;
     color: black;
     width: 215px;
     height: 65px;
-    margin-left: 100px;
+    margin-left: 75px;
     margin-top: 20px;
 }
 .skills_text3 p{
+    text-align: center;
     float: left;
     color: black;
     width: 215px;
     height: 65px;
-    margin-left: 100px;
+    margin-left: 120px;
     margin-top: 20px;
 }
 .skills_text4 p{
+    text-align: center;
     float: left;
     color: black;
     width: 215px;
     height: 65px;
-    margin-left: 100px;
+    margin-left: 120px;
     margin-top: 20px;
 }
 
@@ -191,7 +344,7 @@ nav{
 
 .cases{
     height: 100%;
-    background: url(../img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png) 900px 30px no-repeat, url(../img/%D0%BA%D0%B5%D0%B9%D1%81%D1%8B.png) 30px 70px no-repeat; 
+    background: url(../img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png) 890px 30px no-repeat, url(../img/%D0%BA%D0%B5%D0%B9%D1%81%D1%8B.png) 30px 70px no-repeat; 
     }
 
 
@@ -246,7 +399,20 @@ nav{
     padding-left: 5px;
     padding-right: 5px;
     background-color: #89d1d1; 
+    transition: 0.2s;
+    transform: scale(1);
+    animation: pulse infinite;
+    animation-duration: 2s;
     }
+.cases input:hover{
+    background: #344051;
+    color: white;
+    border-color: #344051;
+}
+.cases input:active{
+    color:yellow;
+    transform: scale(1.1)
+}
 
 .price{
     width: auto;
@@ -302,23 +468,65 @@ nav{
     width: 100%;
     height: 100%;
     margin-top: 150px;
-    background: url(../img/%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png) 1420px 250px no-repeat , url(../img/%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png) 1065px 250px no-repeat , url(../img/%D1%81%D0%BA%D0%BE%D0%B1%D0%BA%D0%B8.png) 680px 250px no-repeat , url(../img/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png) 320px 250px no-repeat , url(../img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png) 880px 150px no-repeat, url(..//img/%D1%84%D0%BE%D0%BD2.png) no-repeat;
+    overflow: scroll;
+    background: url(..//img/%D1%84%D0%BE%D0%BD2.png) no-repeat;
+    background-attachment: fixed;
     
 }
+
+.img8{
+    display: inline-block;
+    margin-left: 320px;
+    margin-top: 50px;
+    animation: flip infinite;
+    animation-duration: 2.6s;
+}
+.img9{
+    display: inline-block;
+    margin-left: 320px;
+    margin-top: 50px;
+     animation: flip infinite;
+    animation-duration: 2.6s;
+}
+.img10{
+    display: inline-block;
+    margin-left: 300px;
+    margin-top: 50px;
+     animation: flip infinite;
+    animation-duration: 2.6s;
+}
+.img11{
+     display: inline-block;
+    margin-left: 298px;
+    margin-top: 50px;
+     animation: flip infinite;
+    animation-duration: 2.6s;
+}
+.img7{
+   
+    margin-left: 870px;
+    margin-top: 15px;
+}
+.stat{
+    height: 100%;
+    width: 100%;
+
+}
+
 .stat h2{
     font-size: 28px;
     font-weight: bold;
     text-align: center;
-    padding-top: 104px;
     font-family: Arial, sans-serif;
     }
 .stat li{
      float: left;
-    line-height: 200px;
-    font-weight: bold;
+    line-height: 50px;
+    font-weight: 900;
     font-family: Arial, sans-serif;
     color: black;
     margin-left: 320px;
+    margin-top: 30px;
     font-size: 28px;    
 }
 .text_stat1{
@@ -360,6 +568,7 @@ nav{
     
 }
 .reviews p{
+    padding-bottom: 20px;
     display: block;
     width: 790px;
     margin-left: 560px;
@@ -505,13 +714,25 @@ nav{
     text-align: center;
     margin-left: 950px;
     margin-top: 0px;
-   color: white;
+    color: white;
     background: none;
     border: 2px solid;
     padding: 5px;
     border-radius: 5px;
-    
+    animation: pulse infinite;
+    animation-duration: 2s;
 }
+.submit input:hover{
+    background: #344051;
+    color: white;
+    border-color: yellow;
+    background-color: coral;
+}
+.submit input:active{
+    color:yellow;
+    background:red;
+    }
+
 .map{
     height: 355px;
     width: 100%;
