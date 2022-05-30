@@ -1,0 +1,421 @@
+body{
+ font-family: Arial, sans-serif;   
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: #344051;
+    position: fixed;
+    z-index: 10;
+}
+.logo{
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    line-height: 60px;
+    float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    float: left;
+}
+.menu li{
+    float: left;
+    line-height: 60px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin-left: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    background: url(../img/%D0%9F%D0%B0%D1%80%D0%B5%D0%BD%D1%8C.png) 90% 100%/auto 85% no-repeat , url(../img/%D1%84%D0%BE%D0%BD.png) center/cover no-repeat;
+}
+.title__container{
+    float: left;
+    color: #2c384a;
+    text-align: center;
+    width: 100%;
+    
+    opacity: 0;
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-duration: 2.4s;
+    -o-animation-duration: 2.4s;
+    animation-duration: 2.4s;
+    
+}
+.title__container h1{
+    font-family: Arial, sans-serif;
+    font-size: 72px;
+    font-weight: 600;
+    
+}
+
+
+.title__container h4{
+    margin-top: 40px;
+    font-size: 22px;
+    color: gray;
+}
+
+.title__container input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 50px 14px 0px 14px;
+}
+.menu li a{
+    transition: all 0.1s; 
+    color: white;
+    display: inline-block;
+    transform: scale(1);
+    text-decoration: none;    
+}
+.menu li a:visited{
+    color: white;
+}
+.menu li a:hover{
+    color: orange;
+    
+}
+.menu li a:active{
+    transform: scale(1.5)
+    }
+
+.main input{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.main input:hover{
+   background: #344051;
+    color: white;
+}
+.main input:active{
+   transform: scale(1.1);
+    
+}
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -480px
+    }
+    to{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+@media (max-width: 991px){
+    .title__container, .title__container h4, .title__container input{
+        color: white;
+        position: relative;
+        z-index: 3;
+    }
+    .title__container input{
+        border: 2px solid #ffff;
+    }
+    .main{
+        position: relative;
+    }
+    .main::after{
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.4)
+    }
+}
+.resume{
+    height: 100%;
+}
+.resume h2{
+    font-family: Arial, sans-serif;
+    font-size: 31px;
+    font-weight: 600;
+}
+.resume input{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    border:  2px solid ;
+    border-color: #2c384a;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 10px;
+    background: url(../img/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.png) left/auto 60% no-repeat;
+    background-position: 5px;
+    transition: 0.2s;
+    transform: scale(1);
+    animation: pulse infinite;
+    animation-duration: 2s;
+    }
+.resume input:hover{
+    background: #344051;
+    color: white;
+}
+.resume input:active{
+   transform: scale(1.4);
+    color: yellow;
+    
+}
+
+.skills {
+    height: 100%;
+   background: url(../img/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%20%D1%84%D0%BE%D0%BD%D0%B0.png) center/cover  no-repeat;
+   }
+.row2{
+   margin-top: 350px;
+}
+.skills h2{
+    font-family: Arial, sans-serif;
+    font-size: 31px;
+    font-weight: 600;
+}
+
+
+.img2{
+    padding-left: 10px;
+}
+.cases h2{
+    padding-left: 25px;
+    font-family: Arial, sans-serif;
+    font-size: 31px;
+    font-weight: 600;
+}
+.cases input{
+ font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    border:  2px solid ;
+    border-color: #89d1d1;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #89d1d1; 
+    transition: 0.2s;
+    transform: scale(1);
+    animation: pulse infinite;
+    animation-duration: 2s;
+    }
+
+.price{
+    height: 100%;
+}
+
+.price h2{
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+.price h4{
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+.price input{
+ font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    border:  2px solid ;
+    border-color: #89d1d1;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #89d1d1; 
+    transition: 0.2s;
+    transform: scale(1);
+    animation: pulse infinite;
+    animation-duration: 2s;
+    }
+
+.stat{
+    height: 494px;
+    background: url(../img/%D1%84%D0%BE%D0%BD2.png);
+}
+.row3{
+    padding-top: 200px;
+}
+.stat h2{
+    font-family: Arial, sans-serif;
+    font-size: 31px;
+    font-weight: 600;
+}
+.stat h4{
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+.stat  p{
+    font-weight: 600;
+}
+.img2{
+    padding-left: 60px;
+} 
+.contacts{
+    height: 100%;
+    background: url(../img/%D0%9C%D0%BE%D0%B8%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B%20%D1%84%D0%BE%D0%BD.png)
+}
+.contacts h2{
+    font-family: Arial, sans-serif;
+    font-size: 31px;
+    font-weight: 600;
+    color: white;
+}
+.contacts h4{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+
+}
+
+.reviews{
+    height: 590px;
+    text-align: center;
+    
+}
+.row99{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.reviews h2{
+     font-family: Arial, sans-serif;
+    font-size: 31px;
+    font-weight: 600;
+}
+.reviews p{
+    padding-top: 35px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+.reviews img{
+    padding-top: 30px;
+}
+.radio1>input{
+    visibility: hidden;
+    }
+.radio1>input + img{
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.radio1>input:checked+img{
+    border: 2px solid #f00;
+}
+
+
+.radio2>input{
+    visibility: hidden;
+    }
+.radio2>input + img{
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.radio2>input:checked+img{
+    border: 2px solid #f00;
+}
+
+
+.radio3>input{
+    visibility: hidden;
+    }
+.radio3>input + img{
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.radio3>input:checked+img{
+    border: 2px solid #f00;
+}
+
+.contacts h3{
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+
+}
+.contacts p{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+.col5{
+    text-align: center;
+    color: white;
+    background-color: white;
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 5px;
+    animation: pulse infinite;
+    animation-duration: 2s;
+}
+.map{
+    background: 
+    height: 445px;
+}
+
+
