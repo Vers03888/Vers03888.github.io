@@ -83,6 +83,19 @@ main{
     padding: 0px 16px;
     margin: 50px 14px 0px 14px;
 }
+.logo a:visited{
+   color: white;
+}
+.logo a{
+     transition: all 0.1s; 
+    color: white;
+    display: inline-block;
+    transform: scale(1);
+    text-decoration: none;
+}
+.logo a:hover{
+    color: orange;
+}
 .menu li a{
     transition: all 0.1s; 
     color: white;
@@ -413,6 +426,18 @@ main{
     font-size: 14px;
     font-weight: 600;
     color: white;
+}
+#modal_text{
+    font-size: 24px;
+    color: black;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+#number_1{
+    width: 350px;
+    border-radius: 5px;
+    border: 2px solid #D3D3D3;
+    margin-right: 50px;
 }
 @media (max-width: 770px){
     .contacts{
