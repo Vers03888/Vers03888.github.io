@@ -8,22 +8,51 @@
     <meta property="og:title" content="Это моя первая страница">
 
     <title>Sergey Chuprilin- веб-разработчик</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
    <Header>
      <nav>
-        <div class="logo"> Sergey Chuprilin</div> 
-         <div class="menu"><ul>
-         <li>Обо мне</li>
-         <li>Услуги</li>
-         <li>Кейсы</li>
-         <li>Прайс</li>
-         <li>Отзывы</li>
-         <li>Контакты</li>
+       <div class="container">
+           <div class="row">
+               <div class="col-xxl-2 col-lg-3 col-7"><div class="logo"><a href="#Main">Андрей Браун</a></div> </div>
+               <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block"><div class="menu">
+        <ul>
+         <li><a href="#Resume">Обо мне</a></li>
+         <li><a href="#Skills">Услуги</a></li>
+         <li><a href="#Cases">Кейсы</a></li>
+         <li><a href="#Price">Прайс</a></li>
+         <li><a href="#Reviews">Отзывы</a></li>
+         <li><a href="#Contacts">Контакты</a></li>
+        </ul></div></div>
+          <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+              <div class="dropdown">
+  <a class="btn btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    Навигация
+  </a>
 
-
-
-         </ul></div>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+   
+    <li><a class="dropdown-item" href="#">Обо мне</a></li>
+    <li><a class="dropdown-item" href="#">Услуги</a></li>
+    <li><a class="dropdown-item" href="#">Кейсы</a></li>
+    <li><a class="dropdown-item" href="#">Прайс</a></li>
+    <li><a class="dropdown-item" href="#">Отзывы</a></li>
+    <li><a class="dropdown-item" href="#">Контакты</a></li>
+  </ul>
+</div>
+          </div>
+           </div>
+       </div>
+        
+         
          
          
      </nav>
@@ -31,109 +60,349 @@
    </Header>
    
       
-      <div class="main"><div class="title__container">
-       <h1>Привет! <br>Я Сергей Чуприлин</h1>
-       <h4>Фулл стек веб-разработчик</h4>
-    <form action="#">
-         <input type="submit" value="Обо мне">
-        <input type="submit" value="Мои работы"></form>
-        </div>
-   <div class="resume" class="title__container">
-       <h2>Обо мне</h2>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quia eaque expedita dolorem nulla ipsam, necessitatibus ullam, earum ut a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus
-       </p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus.</p>
-        <form action="#"><input type="submit" value="Скачать резюме"></form>
+      <section class="main" id="Main">
+      <div class="container h-100"><div class="row align-items-center h-100"><div class="col-lg-6 mt-5 pd-5">
+      <div class="title__container mt-5">
+       <h1>Привет! <br>Я Андрей Браун</h1>
+       <h4 contenteditable="true">Фулл стек веб-разработчик</h4>
+           <form action="#">
+         <input type="button" value="Обо мне">
+        <input type="button" value="Мои работы"></form>
+        </div></div></div></div>
+     </section>
+           
+           <script src="js/bootstrap.bundle.js"></script>
+           
+            <div id="Resume"></div>
+          <br>   
+              <section class="resume pt-5">
+               <div class="container h-100 pt-1"><div class="row d-flex  justify-content-center h-100"><div class="col-lg-6">
+                   <div class="resume" class="title__container">
+       <h2 class="text-center">ОБО МНЕ</h2>
+       <div class="text-center"><div class="img2"><img src="../src/img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png" alt=""></div></div>
+       <div class="text-center pt-5"><div class="img1"><img src="../src/img/%D1%84%D0%BE%D1%82%D0%BA%D0%B0.png" alt=""></div></div>
+       <div class="prg pt-5"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quia eaque expedita dolorem nulla ipsam, necessitatibus ullam, earum ut a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus
+       </p></div>
+       <div class="prg1"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus.</p></div>
+        
+        <div class="gap-2 col-2 mx-auto"><form action="#"><input type="button" value="Скачать резюме"></form></div>
         
    </div>
+               </div></div></div>
+           </section>
+           
+            <div id="Skills"></div>
+          <br>
+           <section class="skills"><div class="container">
+  
+  <h2 class=" text-center pt-5">ЧТО Я УМЕЮ</h2>
+  <div class="text-center"><img src="../src/img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png" alt=""></div>
+  
+  <div class="row row2 text-center">
+   <div class="col-3 text-center">
+      <img src="../src/img/%D0%BD%D0%BE%D1%83%D1%82.png" alt="">
+    </div>
+    <div class="col-3 text-center">
+      <img src="../src/img/%D0%B7%D0%BD%D0%B0%D0%BA.png" alt="">
+    </div>
+    <div class="col-3 text-center">
+      <img src="../src/img/%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.png" alt="">
+    </div>
+    <div class="col-3 text-center">
+      <img src="../src/img/%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BE%D1%84%D0%BE%D0%BD.png" alt="">
+    </div>
     
-    
-    <div class="skills" class="title__container">
-        <h2>Что я умею</h2>
-        
-<h4>Веб-дизайн</h4>
-<p>orem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus</p>
-<h4>Разработка</h4>
-<p>orem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus</p>
-<h4>CEO-оптимизиция
-</h4>
-     <p>orem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus</p>        
+    <div class="col-3">
+      <h4>Веб-дизайн</h4>
+    </div>
+    <div class="col-3">
+      <h4>Разработка</h4>
+    </div>
+    <div class="col-3">
+      <h4>CEO-оптимизиция</h4>
+    </div>
+    <div class="col-3">
       <h4>Маркетинг</h4>
-        <p>orem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus</p>
+    </div>
+    <div class="col-3">
+      <p>orem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus</p>
+    </div>
+    <div class="col-3">
+      <p>orem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus</p>
+    </div>
+    <div class="col-3">
+      <p>orem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus</p>
+    </div>
+    <div class="col-3">
+      <p>orem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus</p>
+    </div>
+  </div>
+    
+  </div>
+       </section>
+          
+          <div id="Cases"></div>
+          <br> 
+           <section class="cases">
+              <div class="container d-flex"><div class="row">
+                   <div class="col-4 offset-5 pt-5"><h2>КЕЙСЫ</h2>
+                   <img class="img2" src="../src/img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png" alt=""></div>
+                   
+                   <div class="col-8 offset-4"><p class="cases_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                   
+                   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="image-link" src="../src/img/%D0%BA%D0%B5%D0%B9%D1%81%D1%8B.png" alt="" href="img/%D0%BA%D0%B5%D0%B9%D1%81%D1%8B.png">
+    </div>
+    <div class="carousel-item">
+      <img class="image-link" src="../src/img/%D0%BA%D0%B5%D0%B9%D1%81%D1%8B.png" alt="" href="img/%D0%BA%D0%B5%D0%B9%D1%81%D1%8B.png">
+    </div>
+    <div class="carousel-item">
+      <img class="image-link" src="../src/img/%D0%BA%D0%B5%D0%B9%D1%81%D1%8B.png" alt="" href="img/%D0%BA%D0%B5%D0%B9%D1%81%D1%8B.png">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+                   
+                   
+                   </div></div>
+                   
+                   <div class="container"><div class="row">
+                       <div class="col-2">
+                       <h3 class="Client">Client:</h3>
+        <p class="client_text">Какая-то компания</p>
+        <h3 class="website">WEBSITE</h3>
+        <p class="web-click">https://somedomain.com</p>
+                      <form action="#">
+        <input type="button" value="VISIT LIVE SITE"></form></div>
+                       <div class="col-9 offset-1">
+                           <h3 class="name_project">Название проекта</h3>
+        <p class="n_project">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus</p>
+                       </div>
+                   </div>
+                   </div>
+                   </section>
+                   
+                   
+                   <div id="Price"></div>
+          <br>
+                       <section id="price" class="calculator section">
+            <div class="calculator_container container">
+                <h2>Расчет стоимости</h2>
+                <div class="calculator_inner">
+                    <h3>Тип Сайта</h3>
+                    <select id="selectSite" class="mySelect" name="type" id="typeSite">
+                        <option value="0" days="0" selected disabled>Выберите пункт</option>
+                        <option value="2000" days="2">Сайт-визитка</option>
+                        <option value="3000" days="3">Корпоративный сайт</option>
+                        <option value="4000" days="4">Интернет-магазин</option>
+                    </select>
+                    <h3>Дизайн</h3>
+                    <select id="selectDesign" class="mySelect" name="type" id="typeSite">
+                        <option value="0" days="0" selected disabled>Выберите пункт</option>
+                        <option value="2000" days="2">Шаблонный</option>
+                        <option value="3000" days="3">Уникальный</option>
+                        <option value="4000" days="4">WOW-Дизайн</option>
+                    </select>
+                    <h3>Адаптивность</h3>
+                    <select id="selectAdaptive" class="mySelect" name="type" id="typeSite">
+                        <option value="0" days="0" selected disabled>Выберите пункт</option>
+                        <option value="2000" days="2">Только ПК</option>
+                        <option value="3000" days="3">Только мобильный сайт</option>
+                        <option value="4000" days="4">ПК + Мобильный</option>
+                    </select>
+                    <hr>
+                    <div class="calculator_footer">
+                        <div class="days">
+                            <p class="text098">Сроки</p>
+                            <p class="digit" id="digit1">0</p>
+                            <div class="clear"></div>
+                        </div>
 
-        
+                        <div class="price">
+                           <span class="text099">Стоимость</span>
+                            <span class="digit" id="digit2">0</span>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="row justify-content-center text-center">
+                            <div class="col-12 ">
+                                <button class="mx-auto">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                    
+                    
+                    
+                             <div id="Stat"></div>
+          <br>
+                    <section class="stat">
+                        <div class="container">
+                            <div class="row">
+                               <div class="col-4 offset-5 pt-5"><h2>Немного статистики</h2>
+                   <img class="img2" src="../src/img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png" alt=""></div>
+                            </div>
+                            <div class="row row3 offset-1 text-center">
+   <div class="col-3 text-center">
+      <img src="../src/img/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png" alt="">
+    </div>
+    <div class="col-3 text-center">
+      <img src="../src/img/%D1%81%D0%BA%D0%BE%D0%B1%D0%BA%D0%B8.png" alt="">
+    </div>
+    <div class="col-3 text-center">
+      <img src="../src/img/%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png" alt="">
+    </div>
+    <div class="col-3 text-center">
+      <img src="../src/img/%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png" alt="">
     </div>
     
-    <div class="cases">
-        
-        <h2>Кейсы</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus</p>
-        <h3>Название проекта</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus</p>
-        
-        <h3>Client:</h3>
-        <p>Какая-то компания</p>
-        <h3>WEBSITE</h3>
-        <p>https://somedomain.com</p>
-        <form action="#"><a href="https://somedomain.com"target="_blank">VISIT LIVE SITE</a></form>
+    <div class="col-3">
+      <h4 class="statAnimation">120</h4>
+      <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
+    </div>
+    <div class="col-3">
+      <h4 class="statAnimation">4600</h4>
+      <p>ЧАСОВ РАБОТЫ</p>
+    </div>
+    <div class="col-3">
+      <h4 class="statAnimation">340</h4>
+      <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
+    </div>
+    <div class="col-3">
+      <h4 class="statAnimation">230</h4>
+       <p>НАГРАД ПОЛУЧЕНО</p>
+    </div>
+   
+    </div></div>
+                    </section>
+                    
+                    
+                       <div id="Reviews"></div>
+          <br>  
+                    <section class="reviews">
+  <div class="container">
+      <div class="row row99">
+          <div class="col">
+              <h2>Отзывы</h2>
+          </div>
+          <div class="col">
+              <img src="../src/img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png" alt="">
+          </div>
+          <div class="fotorama" id="carouselExampleControls1">
+ <img src="img/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(70).png">
+ <img src="img/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(70).png">
+         <img src="img/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(70).png">
+          </div>
+     </div>
+  </div>
+  </section>
+               
+               
+               
+               <div id="Contacts"></div>
+          <br>
+               <section class="contacts"><div class="container">
+  
+  <h2 class=" text-center pt-5">МОИ КОНТАКТЫ</h2>
+  <div class="text-center"><img src="../src/img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png" alt=""></div>
+  <div class="col-6 offset-3 pt-5"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quia eaque expedita dolorem nulla ipsam, necessitatibus ullam, earum ut a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus
+       </p></div>
+  <div class="row row3 offset-1 text-center">
+   <div class="col-4 text-center">
+      <img src="../src/img/%D0%B3%D0%B5%D0%BE.png" alt="">
+    </div>
+    <div class="col-4 text-center">
+      <img src="../src/img/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82.png" alt="">
+    </div>
+    <div class="col-4 text-center">
+      <img src="../src/img/%D1%82%D1%80%D1%83%D0%B1%D0%B0.png" alt="">
     </div>
     
-    <div class="price" class="title__container">
-        
-        
-        <h3>Расчет Стоимости</h3>
-        <form action="#">
-        <select name="list1" id="list">
-    <option value="opt1">Выберете пунк</option>
-        </select>
-        
-        
-         <h3>Дизайн</h3>
-         <select name="list1" id="list">
-    <option value="opt1">Выберете пункт</option>
-        </select>
-        
-        <h3>Адаптивность</h3>
-        <select name="list1" id="list">
-    <option value="opt1">Выберете пункт</option>
-        </select></form>
- <li>Сроки</li>
-  <li>Стоимость</li>
-        </div>
+    
+    <div class="col-4">
+      <h4>Санкт-Петербург, Невский проспект 11</h4>
+    </div>
+    <div class="col-4">
+      <h4>info@companyname.com</h4>
+    </div>
+    <div class="col-4">
+      <h4>+7 999 999 999</h4>
+    </div>
+   </div>
+   <h3 class=" text-center pt-5">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
+   
+  
 
-        
-        <div class="stat">
-        <h2>Немного статистики</h2>
-        <h2>120</h2><p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
-        <h2>4600</h2><p>ЧАСОВ РАБОТЫ</p>
-        <h2>340</h2><p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
-        <h2>23</h2><p>НАГРАД ОЛУЧЕНО</p>
-        </div>
-        <div class="reviews" class="title__container">
-            <h2>Отзывы</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus
-orem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus</p>
-       <p>Михаил,Гендиректор ПАО Газпром</p></div>
-       <form action="#"><input type="radio" name="text_input1" value="1">
-<input type="radio" name="text_input1" value="2">
-<input type="radio" name="text_input1" value="3"></form>
-       <footer>
-          <div class="contacts" class="title__container">
-           <h2>Мои контакты</h2>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus
-orem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, necessitatibus. Lorem ipsum dolor sit amet, con</p>
-      <span>Санкт-Петербург, Невский проспект 11</span>
-      <span>info@companyname.com</span>
-      <span>+7 999 999 999</span>
-      <h3>Оставить мне сообщение</h3>
-      <form action="#"><input type="text" name="text_input" placeholder= "Имя">
-      <input type="text" name="text_input" value placeholder= "Email">
-      <textarea name="1" id="1" cols="30" rows="10"></textarea>
-      <input type="submit"value="Отправить">
-      </form>
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="Имя" aria-label="Username">
+  <span class="input-group-text"></span>
+  <input type="text" class="form-control" placeholder="E-mail" aria-label="Server">
+</div>
+
+<div class="input-group">
+  <span class="input-group-text">Сообщение</span>
+  <textarea class="form-control" aria-label="With textarea"></textarea>
+</div>
+   <div class="col-2 col5 offset-5 mt-5"><div class="button"><input type="Button"value="Отправить"></div></div>
+    
+  </div>
+     <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="modal1">
+  Хочу скидку!
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Хотите скидку 1000 руб?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      </footer>
-       
+      <div class="modal-body">
+        <p id="modal_text">Узнайте как. Укажите номер и мы перезвоним вам!</p>
+      </div>
+      <div class="modal-footer">
+       <form action="" id="number_1">
+           <input type="text" name="text_input" value "ValueText" placeholder= "+7">
+       </form>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Хочу скидку!</button>
+      </div>
+    </div>
+  </div>
+</div>
+      
+       </section>
+                
+                <section class="map">
+                 
+      </section>
+            <section class="end">
+                <div class="row">
+                    <div class="col 4 offset-5">
+                        <p>Copyright 2021 Андрей Браун. Desighn by web.</p>
+                    </div>
+                </div>
+            </section>
+            <script src="js/jquery-3.6.0.min.js"></script>
+            <script src="js/jquery.magnific-popup.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+            <script src="js/bootstrap.bundle.js"></script>
+
+         <script src="../src/js/MyScript.js"></script>   
+        </body>
+     
         
-</body>
-</html>
+  
